@@ -1,0 +1,74 @@
+/*html {
+  background: url(../assets/images/bgPic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+html{
+  height:100%;
+  width:100%;
+}
+body{
+  height:100%;
+  width:100%;
+}
+div.background {
+  position:fixed;
+  min-height:100%;
+  min-width:100%;
+  background: url(../assets/images/bgPic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.transbox {
+  text-align: center;
+  margin: 30px;
+  opacity: 1.0;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  left:25%;
+  width:50%;
+  top:100px;
+    position: relative;
+  -webkit-animation: mymove 3s 1; /* Chrome, Safari, Opera */
+  animation: mymove 3s 1;
+  font-weight: bold;
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #fff;
+}
+
+div.transbox span a{
+
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+
+div.transbox span a:hover{
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 100px;}
+}
+
+.button {
+    position: absolute;
+    bottom: 30%;
+    left:48%;
+}
