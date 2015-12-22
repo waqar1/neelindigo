@@ -45,13 +45,14 @@ div.transbox p {
 }
 
 div.transbox span a{
-
+  display:inline-block;
   font-size:18px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color:#fff;
 }
 
 div.transbox span a:hover{
+  display:inline-block;
   text-decoration: none;
 }
 
