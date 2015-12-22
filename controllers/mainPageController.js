@@ -9,61 +9,61 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 
 	$( "#Upper" ).hover(
 		function() {
-	        $("#Upper").addClass('animated rubberBand');
+	        $("#Upper").addClass('animated flip');
 	    },
 	    function() {
-	        $("#Upper").removeClass('animated rubberBand');
+	        $("#Upper").removeClass('animated flip');
 	    }
 	);
 
 	$('#Upper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		$("#Upper").removeClass('rotateIn');
 		$("#Upper").removeClass('animated');
-		$("#Upper").removeClass('rubberBand');
+		$("#Upper").removeClass('flip');
 	});
 
 	$( "#Left" ).hover(
 		function() {
-	        $("#Left").addClass('animated rubberBand');
+	        $("#Left").addClass('animated flip');
 	    },
 	    function() {
-	        $("#Left").removeClass('animated rubberBand');
+	        $("#Left").removeClass('animated flip');
 	    }
 	);
 
 	$('#Left').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		$("#Left").removeClass('rotateInUpLeft');
 		$("#Left").removeClass('animated');
-		$("#Left").removeClass('rubberBand');
+		$("#Left").removeClass('flip');
 	});
 
 	$( "#Right" ).hover(
 		function() {
-	        $("#Right").addClass('animated rubberBand');
+	        $("#Right").addClass('animated flip');
 	    },
 	    function() {
-	        $("#Right").removeClass('animated rubberBand');
+	        $("#Right").removeClass('animated flip');
 	    }
 	);
 
 	$('#Right').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		$("#Right").removeClass('rotateInUpRight');
 		$("#Right").removeClass('animated');
-		$("#Right").removeClass('rubberBand');
+		$("#Right").removeClass('flip');
 	});
 
 	$( "#Below" ).hover(
 		function() {
-	        $("#Below").addClass('animated rubberBand');
+	        $("#Below").addClass('animated flip');
 	    },
 	    function() {
-	        $("#Below").removeClass('animated rubberBand');
+	        $("#Below").removeClass('animated flip');
 	    }
 	);
 
 	$('#Below').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		$("#Below").removeClass('rotateIn');
 		$("#Below").removeClass('animated');
-		$("#Below").removeClass('rubberBand');
+		$("#Below").removeClass('flip');
 	});
 }]);
