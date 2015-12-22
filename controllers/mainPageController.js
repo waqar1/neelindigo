@@ -17,7 +17,7 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 	);
 
 	$('#Upper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#Upper").removeClass('rotateIn');
+		$("#Upper").removeClass('rollIn');
 		$("#Upper").removeClass('animated');
 		$("#Upper").removeClass('flip');
 	});
@@ -32,7 +32,7 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 	);
 
 	$('#Left').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#Left").removeClass('rotateInUpLeft');
+		$("#Left").removeClass('rollIn');
 		$("#Left").removeClass('animated');
 		$("#Left").removeClass('flip');
 	});
@@ -47,7 +47,7 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 	);
 
 	$('#Right').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#Right").removeClass('rotateInUpRight');
+		$("#Right").removeClass('rollIn');
 		$("#Right").removeClass('animated');
 		$("#Right").removeClass('flip');
 	});
@@ -62,7 +62,7 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 	);
 
 	$('#Below').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#Below").removeClass('rotateIn');
+		$("#Below").removeClass('rollIn');
 		$("#Below").removeClass('animated');
 		$("#Below").removeClass('flip');
 	});
