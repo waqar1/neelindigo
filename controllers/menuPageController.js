@@ -6,4 +6,49 @@ myApp.controller('menuPageController', ['$scope', function($scope){
         bg = "linear-gradient(" + pct + "deg,#4ac1ff,#795bb0)";
         $(".background").css("background-image", bg);
 	});
+
+	$( "#firstImg" ).hover(
+		function() {
+	        $("#firstImg").addClass('animated shake');
+	    },
+	    function() {
+	        $("#firstImg").removeClass('animated shake');
+	    }
+	);
+
+	$('#firstImg').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$("#firstImg").removeClass('slideInLeft');
+		$("#firstImg").removeClass('animated');
+		$("#firstImg").removeClass('shake');
+	});
+
+	$( "#secondImg" ).hover(
+		function() {
+	        $("#secondImg").addClass('animated shake');
+	    },
+	    function() {
+	        $("#secondImg").removeClass('animated shake');
+	    }
+	);
+
+	$('#secondImg').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$("#secondImg").removeClass('slideInDown');
+		$("#secondImg").removeClass('animated');
+		$("#secondImg").removeClass('shake');
+	});
+
+	$( "#thirdImg" ).hover(
+		function() {
+	        $("#thirdImg").addClass('animated shake');
+	    },
+	    function() {
+	        $("#thirdImg").removeClass('animated shake');
+	    }
+	);
+
+	$('#thirdImg').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$("#thirdImg").removeClass('slideInRight');
+		$("#thirdImg").removeClass('animated');
+		$("#thirdImg").removeClass('shake');
+	});
 }]);
