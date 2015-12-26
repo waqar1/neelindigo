@@ -19,5 +19,30 @@ myApp.controller('timerPageController', ['$scope', function($scope){
 	.find('input').change(function(){
 		console.log(this.value);
 		$scope.timeSelected = this.value;
+		var i = $scope.timeSelected;
+
+var counterBack = setInterval(function(){
+  i--;
+  if(i>0){
+    $('.progress-bar').css('width', i+'%');
+  } else {
+    clearTimeout(counterBack);
+  }
+  
+}, 1000);
 	});
+
+
+
+    $(document).ready(function() {
+        $('.burning').burn({
+  k: 100,
+  w: 100
+});
+        $("h1").lettering();
+
+        // Code goes here
+
+    });
+
 }]);

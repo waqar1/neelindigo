@@ -1,4 +1,56 @@
+<style>
+.burning{
+  color: orange;         /* A light text makes a nice bright flame source */
+  background: black;    /* A dark background gives some contrast */
+  letter-spacing: 1em;  /* Big text shows off the effect best */  
+  font-weight: bold;
+}
+h1 span {
+	z-index:999;
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  transform-origin: 12% 35%;
+}
+.char1 { transform: rotate(19deg); }
+.char2 { transform: rotate(38deg); }
+.char3 { transform: rotate(57deg); }
+.char4 { transform: rotate(76deg); }
+.char5 { transform: rotate(95deg); }
+.char6 { transform: rotate(114deg); }
+.char7 { transform: rotate(133deg); }
+.char8 { transform: rotate(152deg); }
+.char9 { transform: rotate(171deg); }
+.char10 { transform: rotate(190deg); }
+.char11 { transform: rotate(209deg); }
+.char12 { transform: rotate(228deg); }
+.char13 { transform: rotate(247deg); }
+.char14 { transform: rotate(266deg); }
+.char15 { transform: rotate(285deg); }
+.char16 { transform: rotate(304deg); }
+.char17 { transform: rotate(323deg); }
+.char18 { transform: rotate(342deg); }
+.char19 { transform: rotate(360deg); }
+/* and so on */
+</style>
 <div class="background">
+	<div style="position:absolute; top:20%; left:25%; z-index:30;">
+		<div style="margin-left:150px; margin-top:68px;position:absolute;">
+			<h1 class="burning">IIIIIIIIIIIIIIIIIII</h1>
+		</div>
+		<img class="animated slideInLeft" src="assets/images/mail.png">
+		<img class="animated slideInLeft" src="assets/images/container.png" style="position: absolute;top: 28%;left: 31%;z-index: 1000;">
+		<img class="animated slideInLeft" src="assets/images/material.png" style="position: absolute;top: 31%;left: 37%;z-index: 1001;">
+		<div class="progress" style="width:200px;position: absolute;top: 73%;left: 18%;height: 28px;">
+		  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		    <span class="sr-only"></span>
+		  </div>
+		</div>
+	</div>
+	
 	<div class="center-div" style="top:50%;left:50%;">
 		<div class="input-group clockpicker" style="width:100px;">
 			<input type="text" class="form-control" value="00:00">
@@ -7,4 +59,5 @@
 		</div>
 		<h2 class="white-bordered-text">Dyeing time selection</h2>
 	</div>
+
 </div>
