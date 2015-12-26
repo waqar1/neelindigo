@@ -45,19 +45,15 @@ h1 span {
 		<img class="animated slideInLeft" src="assets/images/container.png" style="position: absolute;top: 28%;left: 31%;z-index: 1000;">
 		<img class="animated slideInLeft" src="assets/images/material.png" style="position: absolute;top: 31%;left: 37%;z-index: 1001;">
 		<div class="progress" style="width:200px;position: absolute;top: 73%;left: 18%;height: 28px;">
-		  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 		    <span class="sr-only"></span>
 		  </div>
 		</div>
 	</div>
 	
-	<div class="center-div" style="top:50%;left:50%;">
-		<div class="input-group clockpicker" style="width:100px;">
-			<input type="text" class="form-control" value="00:00">
-			<span class="input-group-addon">
-			</span>
-		</div>
+	<div class="center-div" style="top:28%;left:50%;">
+		<div id="slider2"></div>
 		<h2 class="white-bordered-text">Dyeing time selection</h2>
 	</div>
-
+	<a class="back" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
 </div>
