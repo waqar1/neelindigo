@@ -24,6 +24,12 @@ myApp.config(function ($routeProvider) {
         }).when('/details-page',{
             controller:'resultPageController',
             templateUrl:'templates/resultpage/details.html'
+        }).when('/crafts-page',{
+            controller:'craftsPageController',
+            templateUrl:'templates/crafts/gallery.html'
+        }).when('/history-page',{
+            controller:'historyPageController',
+            templateUrl:'templates/history/gallery.html'
         }).
         otherwise('/');
 });
