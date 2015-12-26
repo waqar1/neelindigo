@@ -7,4 +7,18 @@ myApp.controller('listMenuController', ['$scope', function($scope){
         $(".background").css("background-image", bg);
 	});
 
+	$( '.anchorHover' ).hover(
+		function() {
+	        $(this).addClass('animated shake');
+	    },
+	    function() {
+	        $(this).removeClass('animated shake');
+	    }
+	);
+
+	$('.anchorHover').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$(this).removeClass('slideInLeft');
+		$(this).removeClass('animated');
+		$(this).removeClass('shake');
+	});
 }]);

@@ -76,7 +76,6 @@ div.transbox span a:hover{
 .img-circle {
     border-radius: 50%;
 }
-
 .white-bordered-text{
   display:inline-block;
   font-size:18px;
@@ -95,4 +94,7 @@ div.transbox span a:hover{
   top:40%;
   height:50px;
   width:50px;
+}
+.anchorHover{
+  width:100%;
 }
