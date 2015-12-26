@@ -1,5 +1,5 @@
 <div class="background">
-	<div style="width:90%;">
+	<div style="width:90%;z-index: 4000;position: relative;">
     <ul class="rig columns-3">
     	<li class="animated bounceInDown hoverEffect">
     		<img src="assets/images/material.png" />
@@ -33,5 +33,7 @@
     	</li>
     </ul>
 </div>
-<a class="back" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
+<div style="position:relative; z-index:5000;">
+        <a class="back" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
+    </div>
 </div>

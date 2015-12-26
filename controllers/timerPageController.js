@@ -1,10 +1,10 @@
 myApp.controller('timerPageController', ['$scope','$rootScope','$location', function($scope,$rootScope,$location){
 
 	$(".background").mousemove(function( event ) {
-  		var w = $(this).width(),
+  		/*var w = $(this).width(),
         pct = 360*(+event.pageX)/w,
         bg = "linear-gradient(" + pct + "deg,#4ac1ff,#795bb0)";
-        $(".background").css("background-image", bg);
+        $(".background").css("background-image", bg);*/
 	});
 
     $(document).ready(function() {

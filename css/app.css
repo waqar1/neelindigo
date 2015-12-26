@@ -19,11 +19,27 @@ body{
   overflow-y: auto;
   height:100%;
 }
+#logo{
+    position: absolute;
+    top: 5%;
+    left: 78%;
+    z-index: 2000;
+}
 div.background {
   position:absolute;
   min-height:100%;
   min-width:100%;
-  background: url(../assets/images/bgPic.jpg) no-repeat center center fixed; 
+  background: url(../assets/images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div.background-menu {
+  position:absolute;
+  min-height:100%;
+  min-width:100%;
+  background: url(../assets/images/menubackground.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -76,7 +92,7 @@ div.transbox span a:hover{
 
 .button {
     position: absolute;
-    bottom: 30%;
+    bottom: 30px;
     left:48%;
 }
 .img-circle {
