@@ -7,4 +7,18 @@ myApp.controller('historyPageController', ['$scope', function($scope){
         $(".background").css("background-image", bg);
 	});
 
+	$( '.hoverEffect' ).hover(
+		function() {
+	        $(this).addClass('animated pulse');
+	    },
+	    function() {
+	        $(this).removeClass('animated pulse');
+	    }
+	);
+
+	$('.hoverEffect').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$(this).removeClass('bounceInDown');
+		$(this).removeClass('animated');
+		$(this).removeClass('pulse');
+	});
 }]);
