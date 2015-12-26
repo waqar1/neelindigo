@@ -39,7 +39,7 @@ div.background-menu {
   position:absolute;
   min-height:100%;
   min-width:100%;
-  background: linear-gradient(rgba(179, 170, 255, 0.28), rgba(251, 251, 251, 0.4)), url(../assets/images/menuBackground.png) no-repeat center center fixed; 
+  background: linear-gradient(rgba(179, 170, 255, 0.28), rgba(251, 251, 251, 0.4)), url(../assets/images/menubackground.png) no-repeat center center fixed; 
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
