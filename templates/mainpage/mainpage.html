@@ -1,7 +1,7 @@
 <div class="background">
   <div class="transbox">
     <span class="animated rollIn" style="position:absolute; top:100px; text-align:center; width:150px; left:45%;">
-    	<a id="Upper" href="#type-menu?menu=1">NATURAL DYEING VIDEO</a>
+    	<a id="Upper" style="cursor:pointer" data-toggle="modal" data-target="#myModal">NATURAL DYEING VIDEO</a>
     </span>
     <span class="animated rollIn" style="position:absolute; left:100px; text-align:center; width:220px; top:50%;">
     	<a id="Left" href="#type-menu?menu=2">INTERACTIVE NATURAL DYEING EXPERIENCE</a>
@@ -14,4 +14,27 @@
     </span>
   </div>
   <a class="back" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">NATURAL DYEING VIDEO</h4>
+      </div>
+      <div class="modal-body">
+        <video width="550" controls>
+          <source src="assets/video/small.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
