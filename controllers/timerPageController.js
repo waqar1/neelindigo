@@ -20,7 +20,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 
         $("#slider2").roundSlider({
 		    sliderType: "min-range",
-		    value: 40,
+		    value: 0,
 		    change: function (e) {
 
 		    	var k = 0;
