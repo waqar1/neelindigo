@@ -11,6 +11,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 
     $(document).ready(function() {
         
+        
         $('.burning').burn({
 		  k: 100,
 		  w: 100

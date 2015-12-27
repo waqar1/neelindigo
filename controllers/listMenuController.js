@@ -23,4 +23,5 @@ myApp.controller('listMenuController', ['$scope', function($scope){
 		$(this).removeClass('animated');
 		$(this).removeClass('shake');
 	});
+	
 }]);
