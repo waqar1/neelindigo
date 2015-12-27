@@ -27,16 +27,18 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 		    value: 0,
 		    change: function (e) {
 
-		    	var k = 0;
+		    	/*var k = 0;
 		 		var i = 100;
 		 		var j = e.value;
-		 		var calc = (i/j);
+		 		var calc = (i/j);*/
+		 		var i = 0;
 
 				var counterBack = setInterval(function(){
-				  if(i>=0){
-				    $('.progress-bar').css('width', k +'%');
-				    k = k + calc;
-				    i = i - calc;
+				  if(i<=100){
+				    $('.progress-bar').css('width', i +'%');
+				    i = i+20;
+				    /*k = k + calc;
+				    i = i - calc;*/
 				  } else {
 				    clearTimeout(counterBack);
 				    $rootScope.$apply(function() {
