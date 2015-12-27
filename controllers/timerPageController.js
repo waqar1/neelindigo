@@ -11,6 +11,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 
     $(document).ready(function() {
         
+        var audio = document.getElementById("audioNg2");
         
         $('.burning').burn({
 		  k: 100,
@@ -27,6 +28,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 		    value: 0,
 		    change: function (e) {
 
+		    	audio.play();
 		    	/*var k = 0;
 		 		var i = 100;
 		 		var j = e.value;
