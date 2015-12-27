@@ -21,6 +21,9 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 
         $("#slider2").roundSlider({
 		    sliderType: "min-range",
+		    step: 20,
+		    min: 0,
+	        max: 60,
 		    value: 0,
 		    change: function (e) {
 
