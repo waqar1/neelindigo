@@ -9,34 +9,20 @@ myApp.controller('subMenuController', ['$scope', function($scope){
         $('.background').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(179, 170, 255, 0.28), rgba(251, 251, 251, 0.4)), url(assets/images/background.png) no-repeat center center fixed');
 	});
 
-	$( "#firstImg" ).hover(
+	$( '.anchorHover' ).hover(
 		function() {
-	        $("#firstImg").addClass('animated shake');
+	        $(this).addClass('animated shake');
 	    },
 	    function() {
-	        $("#firstImg").removeClass('animated shake');
+	        $(this).removeClass('animated shake');
 	    }
 	);
 
-	$('#firstImg').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#firstImg").removeClass('slideInLeft');
-		$("#firstImg").removeClass('animated');
-		$("#firstImg").removeClass('shake');
-	});
-
-	$( "#secondImg" ).hover(
-		function() {
-	        $("#secondImg").addClass('animated shake');
-	    },
-	    function() {
-	        $("#secondImg").removeClass('animated shake');
-	    }
-	);
-
-	$('#secondImg').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$("#secondImg").removeClass('slideInRight');
-		$("#secondImg").removeClass('animated');
-		$("#secondImg").removeClass('shake');
+	$('.anchorHover').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$(this).removeClass('slideInLeft');
+		$(this).removeClass('slideInRight');
+		$(this).removeClass('animated');
+		$(this).removeClass('shake');
 	});
 
 }]);
