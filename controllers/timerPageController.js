@@ -37,7 +37,8 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 
 				var counterBack = setInterval(function(){
 				  if(i<=100){
-				    $('.progress-bar').css('width', i +'%');
+				    $('.progress-bar').css('width', i +'%').attr('aria-valuenow', i);
+				    document.getElementById("prgStatus").innerHTML = i + "% complete";
 				    i = i+20;
 				    /*k = k + calc;
 				    i = i - calc;*/
