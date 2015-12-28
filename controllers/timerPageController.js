@@ -26,6 +26,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 		    min: 0,
 	        max: 60,
 		    value: 0,
+		    sliderType: "min-range",
 		    change: function (e) {
 
 		    	audio.play();

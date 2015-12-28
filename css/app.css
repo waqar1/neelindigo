@@ -119,6 +119,19 @@ div.transbox span a:hover{
   height:50px;
   width:50px;
 }
+#slider2 .rs-border  {
+    border-width: 0px;
+}
+#slider2 .rs-border.rs-outer  {
+    border: 14px solid #aaa;
+}
+#slider2 .rs-range-color  {
+    background: black;
+}
+#slider2 .rs-handle  {
+    background: black;
+    margin-left: 0 !important;
+}
 .menuBtn a:hover{
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari */
