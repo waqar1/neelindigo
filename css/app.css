@@ -129,12 +129,12 @@ div.transbox span a:hover{
 ul.rig {
   list-style: none;
   font-size: 0px;
-  margin-left: 2.5%; /* should match li left margin */
+  margin-left: 4.0%; /* should match li left margin */
 }
 ul.rig li {
   display: inline-block;
   padding: 10px;
-  margin: 1.0% 0 2.5% 2.5%;
+  margin: 1.0% -25px 1.5% 3%;
   background: #fff;
   border: 1px solid #ddd;
   font-size: 16px;
