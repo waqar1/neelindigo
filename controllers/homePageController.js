@@ -1,14 +1,12 @@
 myApp.controller('homePageController', ['$scope', function($scope){
 
-	$scope.myVal = "Of blues there is only one real dye indigo by William morris.the word indigo having means of neel.in different languages like sanskirat,punjabi,Urdu and even in parsion indigo is called as Nee.-from 3500bc evidenceses comes from indus velly in shape of maddar dye so comes to know how old is.this sustainable craft had been export to Roman 300BC to 400AD and different placeses of entire world, irony of this in 19th century precious crafts face decline and downfall going to happen just because of synthetic dyes takes places of sustainable or natural dye";
-
 	$(".background-menu").mousemove(function( event ) {
   		windowWidth = $(window).width();
 		windowHeight = $(window).height();
 		  
 		mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
 		mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-        $('.background-menu').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(84, 12, 138, 0.2), rgba(251, 251, 251, 0)), url(assets/images/menubackground.png) no-repeat center center fixed');
+        $('.background-menu').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(16, 38, 82,0.7), rgba(255, 255, 255,-2.0)), url(assets/images/menubackground.png) no-repeat center center fixed');
 	});
 
 	$( "#enterButton" ).hover(
