@@ -1,33 +1,44 @@
 <div class="background">
 	<div style="width:90%;z-index: 999;position: relative;margin-top:160px;">
         <ul class="rig columns-3">
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-        	<li class="animated bounceInDown hoverEffect">
-        		<img src="assets/images/history.png" />
-        	</li>
-            <li class="animated bounceInDown hoverEffect">
-                <img src="assets/images/history.png" />
-            </li>
-            <li class="animated bounceInDown hoverEffect">
-                <img src="assets/images/history.png" />
-            </li>
+            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+            	<li class="animated bounceInDown hoverEffect">
+            		<img src="assets/images/history.png" />
+            	</li>
+            </a>
+        	<a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+                <li class="animated bounceInDown hoverEffect">
+                    <img src="assets/images/history.png" />
+                </li>
+            </a>
         </ul>
     </div>
     <div style="position:relative; z-index:5000;">
         <a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
     </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog" style="z-index:5000;">
+  <div class="modal-dialog" style="width:440px;">
+    <img src="assets/images/history.png" />
+  </div>
 </div>
