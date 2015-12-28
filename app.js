@@ -33,6 +33,9 @@ myApp.config(function ($routeProvider) {
         }).when('/interval-page',{
             controller:'intervalPageController',
             templateUrl:'templates/interval/interval.html'
+        }).when('/mordents-page',{
+            controller:'mordentsPageController',
+            templateUrl:'templates/mordents/mordents.html'
         }).
         otherwise('/');
 });
