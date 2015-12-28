@@ -6,7 +6,7 @@ myApp.controller('intervalPageController', ['$scope','$rootScope','$location', f
 		  
 		mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
 		mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-        $('.background').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(94, 0, 247, 0.08), rgba(0, 0, 0, 0)), url(assets/images/background.jpg) no-repeat center center fixed');
+        $('.background').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(94, 0, 247, 0.08), rgba(0, 0, 0, 0)), url(assets/images/background-interval.png) no-repeat center center fixed');
 	});
 
 	$scope.cleartime = function(){

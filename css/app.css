@@ -36,6 +36,18 @@ div.background {
   -o-background-size: 100% 100% !important;
   background-size: 100% 100% !important;
 }
+div.backgroundInterval {
+  position:absolute;
+  min-height:100%;
+  min-width:100%;
+  background: linear-gradient(rgba(94, 0, 247, 0.08), rgba(0, 0, 0, 0)), url(../assets/images/background-interval.png) no-repeat center center fixed; 
+  background-size: cover;
+  -webkit-background-size: 100% 100% !important;
+  -moz-background-size: 100% 100% !important;
+  -o-background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 div.background-menu {
   position:absolute;
   min-height:100%;
@@ -50,26 +62,11 @@ div.background-menu {
 div.transbox {
   text-align: center;
   margin: 30px;
-  opacity: 1.0;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  left:25%;
-  width:50%;
-  top:100px;
-    position: relative;
-  -webkit-animation: mymove 3s 1; /* Chrome, Safari, Opera */
-  animation: mymove 3s 1;
-  font-weight: bold;
-  font-size:18px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: #fff;
 }
 
 div.transbox span a{
   display:inline-block;
-  font-size:18px;
+  font-size:21px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color:#fff;
 }
@@ -77,18 +74,6 @@ div.transbox span a{
 div.transbox span a:hover{
   display:inline-block;
   text-decoration: none;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {top: 0px;}
-    to {top: 100px;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    from {top: 0px;}
-    to {top: 100px;}
 }
 
 .button {
