@@ -10,6 +10,7 @@ html{
   width:100%;
 }
 body{
+  font-family: Impact, Charcol;
   height:100%;
   width:100%;
 }
@@ -114,7 +115,7 @@ div.transbox span a:hover{
 .back img{
   position:fixed;
   top:45%;
-  left:20px;
+  left:65px;
   height:50px;
   width:50px;
 }
@@ -187,4 +188,19 @@ ul.rig.columns-4 li {
     width: 100% !important; /* over-ride all li styles */
     margin: 0 0 20px;
   }
+}
+p {
+    font-family: Impact, Charcol;
+}
+h1 {
+    font-family: Impact, Charcol;
+}
+h2 {
+    font-family: Impact, Charcol;
+}
+h3 {
+    font-family: Impact, Charcol;
+}
+h4 {
+    font-family: Impact, Charcol;
 }
