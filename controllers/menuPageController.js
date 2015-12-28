@@ -11,10 +11,10 @@ myApp.controller('menuPageController', ['$scope', function($scope){
 
 	$( '.anchorHover' ).hover(
 		function() {
-	        $(this).addClass('animated shake');
+	        $(this).addClass('animated pulse');
 	    },
 	    function() {
-	        $(this).removeClass('animated shake');
+	        $(this).removeClass('animated pulse');
 	    }
 	);
 
@@ -23,6 +23,6 @@ myApp.controller('menuPageController', ['$scope', function($scope){
 		$(this).removeClass('slideInDown');
 		$(this).removeClass('slideInRight');
 		$(this).removeClass('animated');
-		$(this).removeClass('shake');
+		$(this).removeClass('pulse');
 	});
 }]);

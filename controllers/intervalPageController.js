@@ -1,4 +1,4 @@
-myApp.controller('listMenuController', ['$scope', function($scope){
+myApp.controller('intervalPageController', ['$scope','$rootScope','$location', function($scope,$rootScope,$location){
 
 	$(".background").mousemove(function( event ) {
   		windowWidth = $(window).width();
@@ -9,19 +9,21 @@ myApp.controller('listMenuController', ['$scope', function($scope){
         $('.background').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(94, 0, 247, 0.08), rgba(0, 0, 0, 0)), url(assets/images/background.jpg) no-repeat center center fixed');
 	});
 
-	$( '.anchorHover' ).hover(
-		function() {
-	        $(this).addClass('animated pulse');
-	    },
-	    function() {
-	        $(this).removeClass('animated pulse');
-	    }
-	);
+	$scope.cleartime = function(){
+		clearTimeout(counterBack);
+	};
 
-	$('.anchorHover').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		$(this).removeClass('slideInLeft');
-		$(this).removeClass('animated');
-		$(this).removeClass('pulse');
-	});
-	
+    $(document).ready(function() {
+        var i = 4;
+		counterBack = setInterval(function(){
+		  if(i>=0){
+		    i = i-1;
+		  } else {
+		    clearTimeout(counterBack);
+		    $rootScope.$apply(function() {
+	        	$location.path('/type-menu');
+	      	});
+		  }  
+		}, 1000);
+    });
 }]);

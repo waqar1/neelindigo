@@ -30,6 +30,9 @@ myApp.config(function ($routeProvider) {
         }).when('/history-page',{
             controller:'historyPageController',
             templateUrl:'templates/history/gallery.html'
+        }).when('/interval-page',{
+            controller:'intervalPageController',
+            templateUrl:'templates/interval/interval.html'
         }).
         otherwise('/');
 });

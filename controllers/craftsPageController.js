@@ -24,4 +24,8 @@ myApp.controller('craftsPageController', ['$scope', function($scope){
 		$(this).removeClass('pulse');
 	});
 
+	$scope.showImage = function(){
+
+	};
+
 }]);
