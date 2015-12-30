@@ -1,5 +1,5 @@
 
-var myApp = angular.module('myApp', ['ngRoute','ngAnimate']);
+var myApp = angular.module('myApp', ['ngRoute','ngAnimate','ngScrollbars']);
 
 myApp.config(function ($routeProvider) {
 
@@ -39,5 +39,22 @@ myApp.config(function ($routeProvider) {
         }).
         otherwise('/');
 });
+
+myApp.config(function (ScrollBarsProvider) {
+            // scrollbar defaults
+            ScrollBarsProvider.defaults = {
+                autoHideScrollbar: true,
+                setHeight: 193,
+                scrollInertia: 500,
+                axis: 'y',
+                advanced: {
+                    updateOnContentResize: true
+                },
+                scrollButtons: {
+                    scrollAmount: 'auto', // scroll amount when button pressed
+                    enable: true // enable scrolling buttons by default
+                }
+            };
+        });
 
 

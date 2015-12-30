@@ -1,5 +1,10 @@
 myApp.controller('homePageController', ['$scope', function($scope){
 
+	$scope.scrollbarConfig = {
+		theme: 'dark',
+		scrollInertia: 600
+	};
+
 	$(".background-menu").mousemove(function( event ) {
   		windowWidth = $(window).width();
 		windowHeight = $(window).height();
