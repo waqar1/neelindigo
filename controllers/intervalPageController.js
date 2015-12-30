@@ -12,7 +12,7 @@ myApp.controller('intervalPageController', ['$scope','$rootScope','$location', f
 	};
 
     $(document).ready(function() {
-        var i = 4;
+        var i = 0;
 		counterBack = setInterval(function(){
 		  if(i>=0){
 		    i = i-1;
