@@ -50,7 +50,7 @@ div.background-menu {
   position:absolute;
   min-height:100%;
   min-width:100%;
-  background: radial-gradient(rgba(16, 38, 82,0.7), rgba(255, 255, 255,-2.0)), url(../assets/images/menubackground.png) no-repeat center center fixed; 
+  background: radial-gradient(at 50% 50%, rgba(16, 38, 82,0.7) 2%, rgba(255, 255, 255,-2.0) 50%), url(../assets/images/menubackground.png) no-repeat center center fixed; 
  -webkit-background-size: 100% 100% !important;
   -moz-background-size: 100% 100% !important;
   -o-background-size: 100% 100% !important;
