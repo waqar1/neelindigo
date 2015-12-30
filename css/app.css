@@ -106,13 +106,13 @@ div.transbox span a:hover{
     border-width: 0px;
 }
 #slider2 .rs-border.rs-outer  {
-    border: 14px solid #aaa;
+    border: 12px solid #DEBDBD;
 }
 #slider2 .rs-range-color  {
-    background: black;
+    background: #CE0000;
 }
 #slider2 .rs-handle  {
-    background: black;
+    background: #EF0F0F;
     margin-left: 0 !important;
 }
 .menuBtn a:hover{
