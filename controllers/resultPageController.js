@@ -1,4 +1,6 @@
-myApp.controller('resultPageController', ['$scope', function($scope){
+myApp.controller('resultPageController', ['$scope','sharedService', function($scope,sharedService){
+
+	console.log(sharedService.toString());
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),

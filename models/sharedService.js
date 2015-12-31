@@ -30,6 +30,10 @@ myApp.factory('sharedService', function() {
   	return this.material;
   };
 
+  var toString = function(){
+  	return 'Fabric: ' + this.getFabric() + ', Position: ' + this.getPosition() + ', Mordent: ' + this.getMordent() + ', Material: ' + this.getMaterial();
+  }
+
   return {
   	setFabric: setFabric,
   	getFabric: getFabric,
@@ -38,7 +42,8 @@ myApp.factory('sharedService', function() {
   	setMordent: setMordent,
   	getMordent: getMordent,
   	setMaterial: setMaterial,
-  	getMaterial: getMaterial
+  	getMaterial: getMaterial,
+  	toString: toString
   };
 
 });

@@ -30,7 +30,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
 		    	audio.play();
 
 		 		var i = 0;
-
+		 		//set timer value to shared service here
 				var counterBack = setInterval(function(){
 				  if(i<=100){
 				    $('.progress-bar').css('width', i +'%').attr('aria-valuenow', i);
