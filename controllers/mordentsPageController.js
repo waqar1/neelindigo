@@ -1,4 +1,13 @@
-myApp.controller('mordentsPageController', ['$scope', function($scope){
+myApp.controller('mordentsPageController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
+
+	$scope.selectMordent = function(value){
+		sharedService.setMordent(value);
+		if(sharedService.getPosition() == 'before'){
+			$location.path('/list-menu');
+		}else{
+			$location.path('/details-page');
+		}
+	};
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),

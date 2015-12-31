@@ -1,4 +1,14 @@
-myApp.controller('subMenuController', ['$scope', function($scope){
+myApp.controller('subMenuController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
+
+	$scope.selectBA = function(value){
+		sharedService.setPosition(value);
+		if(value == 'before'){
+			$location.path('/mordents-page');
+		}else if(value == 'after'){
+			$location.path('/list-menu');
+		}
+		
+	};
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),

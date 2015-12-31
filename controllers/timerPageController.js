@@ -1,4 +1,4 @@
-myApp.controller('timerPageController', ['$scope','$rootScope','$location', function($scope,$rootScope,$location){
+myApp.controller('timerPageController', ['$scope','$rootScope','$location','sharedService', function($scope,$rootScope,$location,sharedService){
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
@@ -28,10 +28,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 		    change: function (e) {
 
 		    	audio.play();
-		    	/*var k = 0;
-		 		var i = 100;
-		 		var j = e.value;
-		 		var calc = (i/j);*/
+
 		 		var i = 0;
 
 				var counterBack = setInterval(function(){
@@ -39,13 +36,17 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location', func
 				    $('.progress-bar').css('width', i +'%').attr('aria-valuenow', i);
 				    document.getElementById("prgStatus").innerHTML = i + "% complete";
 				    i = i+20;
-				    /*k = k + calc;
-				    i = i - calc;*/
 				  } else {
 				    clearTimeout(counterBack);
-				    $rootScope.$apply(function() {
-			        	$location.path('/details-page');
-			      	});
+				    if(sharedService.getPosition() == 'before'){
+				    	$rootScope.$apply(function() {
+				        	$location.path('/details-page');
+				      	});
+				    }else{
+				    	$rootScope.$apply(function() {
+				        	$location.path('/mordents-page');
+				      	});
+				    }
 				  }
 				  
 				}, 1000);

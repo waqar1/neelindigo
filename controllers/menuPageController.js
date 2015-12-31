@@ -1,5 +1,10 @@
-myApp.controller('menuPageController', ['$scope', function($scope){
+myApp.controller('menuPageController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
 
+	$scope.goToSubMenu = function(value){
+		sharedService.setFabric(value);
+		$location.path('/sub-menu');
+	};
+	
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
       	pct = 200*(+event.pageX)/w,

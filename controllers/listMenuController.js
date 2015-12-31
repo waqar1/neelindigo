@@ -1,4 +1,9 @@
-myApp.controller('listMenuController', ['$scope', function($scope){
+myApp.controller('listMenuController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
+
+	$scope.selectMaterial = function(val){
+		sharedService.setMaterial(val);
+		$location.path('/timer-page');
+	};
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
