@@ -185,7 +185,7 @@ ul.rig.columns-4 li {
     margin: 0 0 20px;
   }
 }
-p {
+/*p {
     font-family: Impact, Charcol;
 }
 h1 {
@@ -199,9 +199,81 @@ h3 {
 }
 h4 {
     font-family: Impact, Charcol;
-}/*.scroller {
+}*//*.scroller {
     white-space: pre-line;
     height: 500px;
     overflow-y: hidden;
     position: relative;
 }*/
+h1 {
+  font-family: Cabin;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+}
+h2 {
+  font-family: Cabin;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 36px;
+}
+span a {
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 36px;
+}
+a {
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 36px;
+}
+h3 {
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 36px;
+}
+p {
+  font-family: Cabin;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 20px;
+}
+blockquote {
+  font-family: Cabin;
+  font-size: 17.5px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 12.25px;
+}
+pre {
+  font-family: Cabin;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 18.5714px;
+}
