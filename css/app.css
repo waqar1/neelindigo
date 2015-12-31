@@ -185,6 +185,8 @@ ul.rig.columns-4 li {
     margin: 0 0 20px;
   }
 }
+
+.red-tooltip + .tooltip > .tooltip-inner {width:200px;}
 /*p {
     font-family: Impact, Charcol;
 }
