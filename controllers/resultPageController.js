@@ -57,4 +57,8 @@ myApp.controller('resultPageController', ['$scope','sharedService', function($sc
 	});
 
 	$scope.makeResults();
+
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

@@ -24,4 +24,8 @@ myApp.controller('intervalPageController', ['$scope','$rootScope','$location', f
 		  }  
 		}, 1000);
     });
+
+    $('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

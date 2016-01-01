@@ -33,4 +33,8 @@ myApp.controller('mordentsPageController', ['$scope','$location','sharedService'
 		$(this).removeClass('pulse');
 	});
 
+	$('a').mouseenter(function(){
+      audio.play();
+    });
+
 }]);

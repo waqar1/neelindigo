@@ -21,4 +21,8 @@ myApp.controller('historyPageController', ['$scope', function($scope){
 		$(this).removeClass('animated');
 		$(this).removeClass('pulse');
 	});
+
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

@@ -12,4 +12,8 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 			$('.background-menu').css('background', 'radial-gradient(at 50% 50%, rgba(16, 38, 82,0.7) 2%, rgba(255, 255, 255,-2.0) 50%), url(assets/images/menubackground.png) no-repeat center center fixed');
 		}
 	});
+	
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

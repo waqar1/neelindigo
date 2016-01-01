@@ -18,6 +18,12 @@
     <img src="assets/images/logo.png" />
   </div>
   <div id="container" ng-view></div>
+
+   <audio id="hoverSound" preload="auto">
+    <source src="assets/audio/click.mp3"></source>
+    <source src="assets/audio/click.ogg"></source>
+    Your Browser does not support please use (Firefox 3.5+, Chrome 3+, Opera 10.5+, Safari 4+, IE 9+) browsers.
+   </audio>
   
   <script src="libs/jquery-2.1.4.min.js"></script>
   <script src="libs/angular.js"></script>
@@ -42,5 +48,8 @@
   <script src="controllers/historyPageController.js"></script>
   <script src="controllers/intervalPageController.js"></script>
   <script src="controllers/mordentsPageController.js"></script>
+  <script>
+     audio = $("#hoverSound")[0];
+  </script>
 </body>
 </html>

@@ -34,4 +34,8 @@ myApp.controller('subMenuController', ['$scope','$location','sharedService', fun
 		$(this).removeClass('pulse');
 	});
 
+	$('a').mouseenter(function(){
+      audio.play();
+    });
+
 }]);

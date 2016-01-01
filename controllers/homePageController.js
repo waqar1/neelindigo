@@ -32,4 +32,8 @@ myApp.controller('homePageController', ['$scope', function($scope){
 		$("#enterButton").removeClass('animated');
 		$("#enterButton").removeClass('pulse');
 	});
+	
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

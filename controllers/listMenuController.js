@@ -28,4 +28,8 @@ myApp.controller('listMenuController', ['$scope','$location','sharedService', fu
 	});
 
 	$("a").tooltip();
+
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

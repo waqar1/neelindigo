@@ -28,4 +28,8 @@ myApp.controller('menuPageController', ['$scope','$location','sharedService', fu
 		$(this).removeClass('animated');
 		$(this).removeClass('pulse');
 	});
+
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);

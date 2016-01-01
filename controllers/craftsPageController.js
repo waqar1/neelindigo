@@ -22,6 +22,10 @@ myApp.controller('craftsPageController', ['$scope', function($scope){
 		$(this).removeClass('pulse');
 	});
 
+	$('a').mouseenter(function(){
+      audio.play();
+    });
+
 	$scope.showImage = function(){
 
 	};

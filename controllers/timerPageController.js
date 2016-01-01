@@ -8,7 +8,12 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
 	});
 
 	$scope.timeSelected = function(val,$event){
+
 		sharedService.setTime(val);
+
+		var audio = document.getElementById("audioNg2");
+		audio.play();
+
 		$(".btn:first-child").text(angular.element($event.target).text());
 	    $(".btn:first-child").val(angular.element($event.target).text());
 
@@ -35,8 +40,6 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
 	};
 
     $(document).ready(function() {
-        
-        var audio = document.getElementById("audioNg2");
         
         $('.burning').burn({
 		  k: 100,
@@ -80,5 +83,8 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
 		    }
 		});*/
     });
-
+	
+	$('a').mouseenter(function(){
+      audio.play();
+    });
 }]);
