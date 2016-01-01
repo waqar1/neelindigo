@@ -1,6 +1,6 @@
 <div class="background">
-	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:absolute;top:0%;"></div>
-	<div class="center-div" style="left:30%; top:32%;">
+	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;"></div>
+	<div class="center-div" style="left:20%; top:27%;">
 		<div>
 			<h1 class="white-bordered-text" style="font-size:24px;line-height:0.1;">DETAIL RESULT</h1><br/>
 			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">FABRIC &nbsp;&nbsp;&nbsp; {{fabric | uppercase}}</h3><br/>
@@ -9,10 +9,10 @@
 			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">DYEING MATERIAL &nbsp;&nbsp;&nbsp; {{material | uppercase}}</h3><br/>
 			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">MORDENT BATH {{position | uppercase}} DYEING</h3>
 		</div>
-		<div>
-			<img class="animated slideInDown" src="assets/images/result.png" style="position: absolute;top: 0%;left: 24%; width:200px; height:200px;">
-		</div>
 	</div>
+		<div class="container">
+		  <img id="rectangular" ng-src="{{imgUrl}}" style="margin-left:40%;" />
+		</div>
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
-	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;"></div>
+	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
 </div>

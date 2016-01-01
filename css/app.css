@@ -185,10 +185,27 @@ ul.rig.columns-4 li {
     margin: 0 0 20px;
   }
 }
-
 .red-tooltip + .tooltip > .tooltip-inner {width:200px;}
 a{
   cursor:pointer;
+}div.container {
+  display: inline-block;
+}
+#rectangular {
+  -webkit-clip-path: inset(190px 445px 360px 172px);
+  clip-path: inset(190px 445px 360px 172px);
+}
+#circle {
+  -webkit-clip-path: circle(75px at 50% 50%);
+  clip-path: circle(75px at 50% 50%)
+}
+#ellipse {
+  -webkit-clip-path: ellipse(75px 50px at 50% 50%);
+  clip-path: ellipse(75px 50px at 50% 50%);
+}
+#polygon {
+  -webkit-clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
 }
 /*p {
     font-family: Impact, Charcol;
