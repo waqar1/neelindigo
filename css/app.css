@@ -187,6 +187,9 @@ ul.rig.columns-4 li {
 }
 
 .red-tooltip + .tooltip > .tooltip-inner {width:200px;}
+a{
+  cursor:pointer;
+}
 /*p {
     font-family: Impact, Charcol;
 }

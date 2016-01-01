@@ -1,7 +1,8 @@
 myApp.controller('subMenuController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
 
-	$scope.selectBA = function(value){
+	$scope.selectBA = function(value,val2){
 		sharedService.setPosition(value);
+		sharedService.setSubMenu(val2);
 		if(value == 'before'){
 			$location.path('/mordents-page');
 		}else if(value == 'after'){

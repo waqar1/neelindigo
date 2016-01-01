@@ -7,6 +7,33 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
         $('.background').css('background', bg + ', url(assets/images/background.jpg) no-repeat center center fixed');
 	});
 
+	$scope.timeSelected = function(val,$event){
+		sharedService.setTime(val);
+		$(".btn:first-child").text(angular.element($event.target).text());
+	    $(".btn:first-child").val(angular.element($event.target).text());
+
+	    var i = 0;
+ 		//set timer value to shared service here
+		var counterBack = setInterval(function(){
+		  if(i<=100){
+		    $('.progress-bar').css('width', i +'%').attr('aria-valuenow', i);
+		    document.getElementById("prgStatus").innerHTML = i + "% complete";
+		    i = i+20;
+		  } else {
+		    clearTimeout(counterBack);
+		    if(sharedService.getPosition() == 'before'){
+		    	$rootScope.$apply(function() {
+		        	$location.path('/details-page');
+		      	});
+		    }else{
+		    	$rootScope.$apply(function() {
+		        	$location.path('/mordents-page');
+		      	});
+		    }
+		  }
+		}, 1000);
+	};
+
     $(document).ready(function() {
         
         var audio = document.getElementById("audioNg2");
@@ -18,7 +45,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
         
         $("h1").lettering();
 
-        $("#slider2").roundSlider({
+        /*$("#slider2").roundSlider({
 		    sliderType: "min-range",
 		    step: 20,
 		    min: 0,
@@ -51,7 +78,7 @@ myApp.controller('timerPageController', ['$scope','$rootScope','$location','shar
 				  
 				}, 1000);
 		    }
-		});
+		});*/
     });
 
 }]);

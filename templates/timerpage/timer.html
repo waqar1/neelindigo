@@ -53,9 +53,19 @@ h1 span {
 		</div>
 	</div>
 	
-	<div class="center-div animated slideInRight" style="top:28%;left:55%;">
-		<div id="slider2"></div>
+	<div class="center-div animated slideInRight" style="top:22%;left:55%;">
 		<h2 class="white-bordered-text">DYEING TIME SELECTION</h2>
+		<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="letter-spacing:2px;">TIME SELECT
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header" style="letter-spacing:3px;">MINUTES</li>
+      <li class="divider"></li>
+      <li><a ng-click="timeSelected(20,$event)">20 MINUTES</a></li>
+      <li><a ng-click="timeSelected(40,$event)">40 MINUTES</a></li>
+      <li><a ng-click="timeSelected(60,$event)">60 MINUTES</a></li>
+    </ul>
+  </div>	
 	</div>
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
 	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;"></div>
