@@ -1,6 +1,17 @@
 myApp.controller('resultPageController', ['$scope','sharedService', function($scope,sharedService){
 
 	console.log(sharedService.toString());
+	$scope.mordents = {'dm':'Dyeing Material','mb': 'Mordents Bath'};
+
+	$scope.makeResults = function(){
+		$scope.fabric = sharedService.getFabric();
+		$scope.position = sharedService.getPosition();
+		$scope.mordent = sharedService.getMordent();
+		$scope.material = sharedService.getMaterial();
+		$scope.time = sharedService.getTime();
+		$scope.sub = $scope.mordents[sharedService.getSubMenu()];
+		$scope.imgUrl = $scope.material + "," + $scope.fabric + "," + $scope.mordent + "," + $scope.position + "," + $scope.time + ".jpg";
+	};
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
@@ -39,4 +50,5 @@ myApp.controller('resultPageController', ['$scope','sharedService', function($sc
 		$("#secondImg").removeClass('shake');
 	});
 
+	$scope.makeResults();
 }]);
