@@ -55,7 +55,7 @@ div.transbox {
 }
 div.transbox span a{
   display:inline-block;
-  font-size:21px;
+  font-size:18px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color:#fff;
 }
@@ -199,7 +199,8 @@ ul.rig.columns-4 li {
     margin: 0 0 20px;
   }
 }
-.red-tooltip + .tooltip > .tooltip-inner {width:200px;}
+.red-tooltip + .tooltip > .tooltip-inner {width:400px;}
+div.tooltip > .tooltip-inner {min-width:300px;}
 a{
   cursor:pointer;
 }div.container {
@@ -255,7 +256,7 @@ span a {
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 20px;
 }
 a {
   font-family: Cabin;
