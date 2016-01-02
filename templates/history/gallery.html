@@ -4,7 +4,7 @@
         <ul class="rig columns-3">
             <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;" ng-repeat="img in imagesCollection.urls">
             	<li class="animated bounceInDown hoverEffect">
-            		<img ng-src="{{baseUrl}}/{{img.url}}" />
+            		<img ng-src="{{baseUrl}}/{{img.url}}" ng-click="selectImage($index)" />
             	</li>
             </a>
         </ul>
@@ -16,7 +16,7 @@
     <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
 </div>
 <div id="myModal" class="modal fade" role="dialog" style="z-index:5000;">
-  <div class="modal-dialog" style="width:440px;">
-    <img src="assets/images/history.png" />
+  <div class="modal-dialog" style="width:50%; height:10%;">
+    <img ng-src="{{baseUrl}}/{{selectedImg}}" />
   </div>
 </div>

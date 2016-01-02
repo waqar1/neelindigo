@@ -1,6 +1,8 @@
 myApp.controller('historyPageController', ['$scope','historicalService', function($scope,historicalService){
 	$scope.imagesCollection = [];
 	$scope.baseUrl = "";
+	$scope.selectedImg = "";
+
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
       	pct = 200*(+event.pageX)/w,
@@ -36,6 +38,10 @@ myApp.controller('historyPageController', ['$scope','historicalService', functio
     	},function(error){
     		console.log(error);
     	});
+    };
+
+    $scope.selectImage = function(val){
+    	$scope.selectedImg = $scope.imagesCollection.urls[val].url;
     };
 
     $scope.loadImagesCollection();
