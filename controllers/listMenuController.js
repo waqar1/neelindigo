@@ -1,7 +1,8 @@
 myApp.controller('listMenuController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
 
-	$scope.selectMaterial = function(val){
+	$scope.selectMaterial = function(val,val2){
 		sharedService.setMaterial(val);
+		sharedService.setMaterialVal(val2);
 		$location.path('/timer-page');
 	};
 

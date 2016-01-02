@@ -1,7 +1,9 @@
 myApp.controller('mordentsPageController', ['$scope','$location','sharedService', function($scope,$location,sharedService){
 
-	$scope.selectMordent = function(value){
+	$scope.selectMordent = function(value,value2){
 		sharedService.setMordent(value);
+		sharedService.setMordentVal(value2);
+
 		if(sharedService.getPosition() == 'before'){
 			$location.path('/list-menu');
 		}else{

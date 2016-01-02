@@ -6,6 +6,8 @@ myApp.factory('sharedService', function() {
   var material;
   var time;
   var sub;
+  var mordentVal;
+  var materialVal;
   
   var setFabric = function(selection){
   	this.fabric = selection;
@@ -44,6 +46,22 @@ myApp.factory('sharedService', function() {
     return this.time;
   };
 
+  var setMordentVal = function(val){
+    this.mordentVal = val;
+  };
+
+  var getMordentVal = function(){
+    return this.mordentVal;
+  };
+
+  var setMaterialVal = function(val){
+    this.materialVal = val;
+  };
+
+  var getMaterialVal = function(){
+    return this.materialVal;
+  }
+
   var toString = function(){
   	return 'Fabric: ' + this.getFabric() + ', Position: ' + this.getPosition() + ', Mordent: ' + this.getMordent() + ', Material: ' + this.getMaterial() + ', Time: ' + this.getTime() + ', Sub Menu: '+ this.getSubMenu();
   };
@@ -61,6 +79,10 @@ myApp.factory('sharedService', function() {
     getTime: getTime,
     setSubMenu: setSubMenu,
     getSubMenu: getSubMenu,
+    setMordentVal:setMordentVal,
+    getMordentVal:getMordentVal,
+    setMaterialVal: setMaterialVal,
+    getMaterialVal: getMaterialVal,
   	toString: toString
   };
 

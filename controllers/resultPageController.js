@@ -2,21 +2,17 @@ myApp.controller('resultPageController', ['$scope','sharedService', function($sc
 
 	console.log(sharedService.toString());
 	$scope.bF = {'dm':'Dyeing Material','mb': 'Mordents Bath'};
-	$scope.mT = {'pomegranate':'Anar','madder': 'manjeeth'};
 
 	$scope.makeResults = function(){
 		$scope.fabric = sharedService.getFabric();
 		$scope.position = sharedService.getPosition();
 		$scope.mordent = sharedService.getMordent();
+		$scope.mordentVal = sharedService.getMordentVal();
 		$scope.material = sharedService.getMaterial();
+		$scope.materialVal = sharedService.getMaterialVal();
 		$scope.time = sharedService.getTime();
 		$scope.sub = $scope.bF[sharedService.getSubMenu()];
-		var convertedMaterial = $scope.mT[$scope.material];
-		if(convertedMaterial){
-			$scope.imgUrl = 'assets/samples/' + convertedMaterial + '/' + convertedMaterial + $scope.time + '/' + convertedMaterial + "," + $scope.fabric + "," + $scope.mordent + "," + $scope.position + "," + $scope.time + ".jpg";			
-		}else{
-			$scope.imgUrl = 'assets/samples/' + $scope.material + '/' + $scope.material + $scope.time + '/' + $scope.material + "," + $scope.fabric + "," + $scope.mordent + "," + $scope.position + "," + $scope.time + ".jpg";
-		}
+		$scope.imgUrl = 'assets/samples/' + $scope.materialVal + '/' + $scope.materialVal + $scope.time + '/' + $scope.materialVal + "," + $scope.fabric + "," + $scope.mordentVal + "," + $scope.position + "," + $scope.time + ".jpg";
 	};
 
 	$(".background").mousemove(function( event ) {
