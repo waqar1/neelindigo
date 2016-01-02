@@ -2,37 +2,13 @@
     <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;"></div>
 	<div style="width:100%;z-index: 999;position: relative;margin-top:160px;">
         <ul class="rig columns-3">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
+            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;" ng-repeat="img in imagesCollection.urls">
             	<li class="animated bounceInDown hoverEffect">
-            		<img src="assets/images/history.png" />
+            		<img ng-src="{{baseUrl}}/{{img.url}}" />
             	</li>
             </a>
-        	<a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a><a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-                <li class="animated bounceInDown hoverEffect">
-                    <img src="assets/images/history.png" />
-                </li>
-            </a>
-        </ul><div style="height:100px;"></div>
+        </ul>
+        <div style="height:100px;"></div>
     </div>
     <div style="position:relative; z-index:5000;">
         <a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>

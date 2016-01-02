@@ -1,4 +1,4 @@
-kioskApp.factory('galleryService', function ($http) {
+myApp.factory('galleryService', function ($http) {
     var factory = {};
     factory.fetchGalleryData = function () {
         var url = "gallery.json";

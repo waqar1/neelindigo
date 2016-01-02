@@ -1,5 +1,6 @@
-myApp.controller('historyPageController', ['$scope', function($scope){
-
+myApp.controller('historyPageController', ['$scope','historicalService', function($scope,historicalService){
+	$scope.imagesCollection = [];
+	$scope.baseUrl = "";
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
       	pct = 200*(+event.pageX)/w,
@@ -25,4 +26,17 @@ myApp.controller('historyPageController', ['$scope', function($scope){
 	$('a').mouseenter(function(){
       audio.play();
     });
+
+    $scope.loadImagesCollection = function(){
+    	historicalService.fetchHistoricalData($scope).then(function(response){
+    		if(response && response.data){
+    			$scope.baseUrl = response.data.baseUrl;
+    			$scope.imagesCollection = response.data.historyImages;
+    		}
+    	},function(error){
+    		console.log(error);
+    	});
+    };
+
+    $scope.loadImagesCollection();
 }]);
