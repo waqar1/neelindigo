@@ -85,8 +85,13 @@ div.transbox span a:hover{
 }*/
 .button {
     position: absolute;
-    bottom: 40px;
+    bottom: 135px;
     left:47%;
+}
+.buttonContact{
+  position: absolute;
+  bottom: 65px;
+  left:46%;
 }
 .img-circle {
     border-radius: 50%;

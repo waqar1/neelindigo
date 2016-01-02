@@ -33,6 +33,21 @@ myApp.controller('homePageController', ['$scope', function($scope){
 		$("#enterButton").removeClass('pulse');
 	});
 	
+	$( "#enterButton2" ).hover(
+		function() {
+	        $("#enterButton2").addClass('animated pulse');
+	    },
+	    function() {
+	        $("#enterButton2").removeClass('animated pulse');
+	    }
+	);
+
+	$('#enterButton2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$("#enterButton2").removeClass('rollIn');
+		$("#enterButton2").removeClass('animated');
+		$("#enterButton2").removeClass('pulse');
+	});
+
 	$('a').mouseenter(function(){
       audio.play();
     });
