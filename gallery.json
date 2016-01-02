@@ -1,0 +1,25 @@
+{
+  "galleryImages": {
+        "urls": [
+            {
+                "url":"g1(1).jpg"
+            },
+            {
+                "url":"g1(2).jpg"
+            },
+            {
+                "url":"g1(3).jpg"
+            },
+            {
+                "url":"g1(4).jpg"
+            },
+            {
+                "url":"g1(5).jpg"
+            },
+            {
+                "url":"g1(6).jpg"
+            }
+        ]
+    },
+    "baseUrl": "assets\\images\\craftsshop"
+}
