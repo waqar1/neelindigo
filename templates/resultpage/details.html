@@ -10,9 +10,24 @@
 			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">MORDENT BATH {{position | uppercase}} DYEING</h3>
 		</div>
 	</div>
-		<div class="container">
+		<!-- <div class="container">
 		  <img id="rectangular" ng-src="{{imgUrl}}" style="margin-left:40%;" />
-		</div>
+		</div> -->
+		<svg width="900" height="700.5" style="margin-left:35%;">
+  <defs>
+    <clipPath id="path">
+     <!--  <circle cx="0.25" cy="0.25" r="0.25" id="circle" /> -->
+      <polygon points="150 421,500 422,500 162,149 161">
+    </polygon>
+    </clipPath>
+  </defs>
+  <foreignObject clip-path="url(#path)" width="100%" height="100%">
+    <img ng-src="{{imgUrl}}" id="kitten" class="clipped" />
+  </foreignObject><!-- 
+  <foreignObject x="250" clip-path="url(#path)" width="100%" height="100%">
+    <div id="kittenReplica" class="clipped"></div>
+  </foreignObject> -->
+</svg>
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
 	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
 </div>
