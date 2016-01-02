@@ -67,22 +67,6 @@ div.transbox span a:hover{
   width: 900px;
   height:700px;
 }
-/*#rectangular{
-  clip-path: inset(190px 445px 360px 172px);
-  -webkit-clip-path: inset(190px 445px 360px 172px);  
-}
-#circle{
-  -webkit-clip-path: circle(75px at 50% 50%);
-  clip-path: circle(75px at 50% 50%)
-}
-#ellipse{
-  -webkit-clip-path: ellipse(75px 50px at 50% 50%);
-  clip-path: ellipse(75px 50px at 50% 50%);
-}
-#polygon{
-  -webkit-clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
-  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
-}*/
 .button {
     position: absolute;
     bottom: 135px;
@@ -206,26 +190,6 @@ a{
 }div.container {
   display: inline-block;
 }
-/*p {
-    font-family: Impact, Charcol;
-}
-h1 {
-    font-family: Impact, Charcol;
-}
-h2 {
-    font-family: Impact, Charcol;
-}
-h3 {
-    font-family: Impact, Charcol;
-}
-h4 {
-    font-family: Impact, Charcol;
-}*//*.scroller {
-    white-space: pre-line;
-    height: 500px;
-    overflow-y: hidden;
-    position: relative;
-}*/
 h1 {
   font-family: Cabin;
   font-size: 24px;
@@ -297,4 +261,12 @@ pre {
   font-variant: normal;
   font-weight: bold;
   line-height: 18.5714px;
+}
+.images {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.imagesAlignedTop img {
+    vertical-align: top;
 }

@@ -1,74 +1,11 @@
 <div class="background">
     <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;"></div>
-    <div style="width:90%;z-index: 999;position: relative;margin-top:170px;">
-    <ul class="rig columns-3">
-    	<li class="animated bounceInDown hoverEffect">
-    		<a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-    		<h3>Image Title</h3>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li>
-    	<li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li><li class="animated bounceInDown hoverEffect">
-            <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;">
-            <img src="assets/images/history.png" />
-            <hr/>
-            <h3>Image Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            </a>
-        </li>
-    </ul><div style="height:100px;"></div>
-
+    <div style="width:90%;z-index: 999;position: relative;margin-top:100px;">
+        <h2 class="white-bordered-text" style="margin-left:22%;">Organic designs</h2>
+<div style="width:900px;height:370px;overflow-y:hidden;overflow-x:scroll;margin-left:270px;display:inline-flex;background-color:white;">
+<img ng-repeat="img in imagesCollection.urls" ng-src="{{baseUrl}}/{{img.url}}" ng-click="selectImage($index)" style="width:300px;height: auto; margin-left:10px; margin-right:10px; padding:5px;border:1px solid;"/>
+</div>
+    <div style="height:100px;"></div>
 </div>
 <div style="position:relative; z-index:4000;">
         <a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
@@ -76,7 +13,7 @@
     <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
 </div>
 <div id="myModal" class="modal fade" role="dialog" style="z-index:5000;">
-  <div class="modal-dialog" style="width:440px;">
-    <img src="assets/images/history.png" />
+  <div class="modal-dialog" style="width:50%;">
+    <img ng-src="{{baseUrl}}/{{selectedImg}}" style="width:700px; height:auto;" />
   </div>
 </div>

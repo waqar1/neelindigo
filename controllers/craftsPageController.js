@@ -1,4 +1,19 @@
-myApp.controller('craftsPageController', ['$scope', function($scope){
+myApp.controller('craftsPageController', ['$scope','galleryService', function($scope,galleryService){
+
+	$scope.imagesCollection = [];
+	$scope.baseUrl = "";
+	$scope.selectedImg = "";
+
+	$scope.config = {
+    autoHideScrollbar: false,
+    theme: 'light',
+    axis: 'x',
+    advanced:{
+        updateOnContentResize: true
+    },
+        setHeight: 200,
+        scrollInertia: 0
+    };
 
 	$(".background").mousemove(function( event ) {
   		var w = $(this).width(),
@@ -26,8 +41,21 @@ myApp.controller('craftsPageController', ['$scope', function($scope){
       audio.play();
     });
 
-	$scope.showImage = function(){
+	 $scope.loadImagesCollection = function(){
+    	galleryService.fetchGalleryData($scope).then(function(response){
+    		if(response && response.data){
+    			$scope.baseUrl = response.data.baseUrl;
+    			$scope.imagesCollection = response.data.galleryImages;	
+    		}
+    	},function(error){
+    		console.log(error);
+    	});
+    };
 
-	};
+    $scope.selectImage = function(val){
+    	$scope.selectedImg = $scope.imagesCollection.urls[val].url;
+    	$("#myModal").modal('show');
+    };
 
+    $scope.loadImagesCollection();
 }]);
