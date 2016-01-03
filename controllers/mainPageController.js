@@ -16,4 +16,16 @@ myApp.controller('mainPageController', ['$scope', function($scope){
 	$('a').mouseenter(function(){
       audio.play();
     });
+
+    var $iframe = $('#nofocusvideo'),
+	contentWindow = $iframe[0].contentWindow,
+	targetOriginUrl = $iframe.attr('src').split('?')[0];
+    
+    $('.modal').on('hidden.bs.modal', function () {
+    	contentWindow.postMessage({ 'method': 'pause' }, targetOriginUrl);
+    });
+
+    $('.modal').on('shown.bs.modal', function () {
+ 		contentWindow.postMessage({ 'method': 'play' }, targetOriginUrl);
+    });
 }]);
