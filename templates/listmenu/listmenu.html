@@ -11,11 +11,11 @@
 		</a><br/>
 		</div>
 		<div class="anchorHover">
-		<a ng-click='selectMaterial("alkanet","alkanet")' style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Anchusa officinalis, Local name: Ratanjot" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/alkanet.png" style="width:50px; height:50px; margin-left:290px;margin-top:10px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">ALKANET</h2>
+		<!-- <a ng-click='selectMaterial("alkanet","alkanet")' style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Anchusa officinalis, Local name: Ratanjot" class="red-tooltip"> --><a data-toggle="modal" data-target="#myModal" style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Curcuma domestica, Local name: Haldi" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/alkanet.png" style="width:50px; height:50px; margin-left:290px;margin-top:10px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">ALKANET</h2>
 		</a><br/>
 		</div>
 		<div class="anchorHover" style="margin-top:10px;">
-		<a ng-click='selectMaterial("myrobalan","myrobalan")' style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Terminalia chebula, Local name: Hareer" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/myrobalan.png" style="width:50px; height:50px; margin-left:290px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">MYROBALAN</h2>
+		<!-- <a ng-click='selectMaterial("myrobalan","myrobalan")' style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Terminalia chebula, Local name: Hareer" class="red-tooltip"> --><a data-toggle="modal" data-target="#myModal" style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Curcuma domestica, Local name: Haldi" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/myrobalan.png" style="width:50px; height:50px; margin-left:290px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">MYROBALAN</h2>
 		</a><br/>
 		</div>
 		<div class="anchorHover" style="margin-top:5px;">
@@ -23,10 +23,26 @@
 		</a><br/>
 		</div>
 		<div class="anchorHover">
-		<a ng-click='selectMaterial("tumeric","tumeric")' style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Curcuma domestica, Local name: Haldi" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/turmeric.png" style="width:50px; height:50px; margin-left:255px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">TUMERIC</h2>
+		<!-- <a ng-click='selectMaterial("tumeric","tumeric")' data-toggle="modal" data-target="#myModal" style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Curcuma domestica, Local name: Haldi" class="red-tooltip"> --><a data-toggle="modal" data-target="#myModal" style="right:0px; cursor:pointer;" data-placement="right" data-toggle="tooltip" title="Curcuma domestica, Local name: Haldi" class="red-tooltip"><img id="firstImg" class="img-circle animated slideInLeft" src="assets/images/turmeric.png" style="width:50px; height:50px; margin-left:255px;"><h2 class="white-bordered-text animated fadeInDownBig" style="margin-left:20px;">TUMERIC</h2>
 		</a><br/>
 		</div>
 	</div>
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
 	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;"></div>
+</div>
+<div id="myModal" class="modal fade" role="dialog" style="z-index:5000;">
+  <div class="modal-dialog" style="width:900px;margin-top:5%;">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      	Status
+      </div>
+      <div class="modal-body">
+      	<h2>Sorry no data available at this time</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+     </div>
+  </div>
 </div>
