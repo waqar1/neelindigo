@@ -8,6 +8,7 @@ myApp.factory('sharedService', function() {
   var sub;
   var mordentVal;
   var materialVal;
+  var swatchesCollection = [];
   
   var setFabric = function(selection){
   	this.fabric = selection;
@@ -66,6 +67,14 @@ myApp.factory('sharedService', function() {
   	return 'Fabric: ' + this.getFabric() + ', Position: ' + this.getPosition() + ', Mordent: ' + this.getMordent() + ', Material: ' + this.getMaterial() + ', Time: ' + this.getTime() + ', Sub Menu: '+ this.getSubMenu();
   };
 
+  var storeCollection = function(obj){
+    swatchesCollection.push(obj);
+  };
+
+  var getCollection = function(){
+    return swatchesCollection;
+  };
+
   return {
   	setFabric: setFabric,
   	getFabric: getFabric,
@@ -83,6 +92,8 @@ myApp.factory('sharedService', function() {
     getMordentVal:getMordentVal,
     setMaterialVal: setMaterialVal,
     getMaterialVal: getMaterialVal,
+    storeCollection: storeCollection,
+    getCollection: getCollection,
   	toString: toString
   };
 

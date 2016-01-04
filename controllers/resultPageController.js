@@ -2,6 +2,7 @@ myApp.controller('resultPageController', ['$scope','sharedService', function($sc
 
 	console.log(sharedService.toString());
 	$scope.bF = {'dm':'Dyeing Material','mb': 'Mordents Bath'};
+	$scope.swatchesCollection = sharedService.getCollection();
 
 	$scope.makeResults = function(){
 		$scope.fabric = sharedService.getFabric();
@@ -12,7 +13,19 @@ myApp.controller('resultPageController', ['$scope','sharedService', function($sc
 		$scope.materialVal = sharedService.getMaterialVal();
 		$scope.time = sharedService.getTime();
 		$scope.sub = $scope.bF[sharedService.getSubMenu()];
-		$scope.imgUrl = 'assets/samples/' + $scope.materialVal + '/' + $scope.materialVal + $scope.time + '/' + $scope.materialVal + "," + $scope.fabric + "," + $scope.mordentVal + "," + $scope.position + "," + $scope.time + ".jpg";
+		$scope.imgUrl = 'assets/samples/' + $scope.materialVal + "," + $scope.fabric + "," + $scope.mordentVal + "," + $scope.position + "," + $scope.time + ".jpg";
+		var collectionObj = {"fabric":$scope.fabric,"position":$scope.position,"mordent":$scope.mordent,"mordentVal":$scope.mordentVal,"material":$scope.material,"materialVal":$scope.materialVal,"time":$scope.time,"sub":$scope.sub,"imgUrl":$scope.imgUrl};
+		if($scope.imgUrl.indexOf('undefined') < 0){
+			sharedService.storeCollection(collectionObj);
+		}
+	};
+
+	$scope.printDiv = function() {
+	  var printContents = document.getElementById('sCollection').innerHTML;
+	  var popupWin = window.open('', '_blank', 'width=300,height=300');
+	  popupWin.document.open()
+	  popupWin.document.write('<html><head><link rel="stylesheet" type="text/css" href="style.css" /></head><body onload="window.print()">' + printContents + '</html>');
+	  popupWin.document.close();
 	};
 
 	$(".background").mousemove(function( event ) {
