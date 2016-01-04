@@ -18,7 +18,7 @@
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;text-decoration:none"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
 	<div id="sCollection" style="width:90%;z-index: 999;position: relative;margin-top:170px;margin-left:100px;" ng-if="swatchesCollection.length > 0">
 		<h2 style="text-align:center;font-size: 32px;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color: #fff;">Swatches collection</h2>
-    <ul class="rig columns-4">
+    <ul class="rig columns-4" style="list-style-type: none;">
        <li class="animated bounceInDown hoverEffect" ng-repeat="swatch in swatchesCollection">
            <a style="cursor:pointer;text-decoration:none;">
             <img ng-src="{{swatch.imgUrl}}" style="width:260px; height:220px;"/>
