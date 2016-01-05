@@ -19,6 +19,15 @@ body{
     left: 78%;
     z-index: 2000;
 }
+#homeDiv{
+  width: 100%px;position:absolute; top:30%;left:22%;
+}
+#homeLine{
+  position:absolute;top:80%; left:42%;
+}
+#enterButton2{
+  color:white; background-color:rgba(100, 99, 102, 0.79); border-color: rgba(123, 123, 123, 0.72); font-weight:bold;
+}
 div.background {
   position:absolute;
   min-height:100%;

@@ -1,0 +1,54 @@
+html{
+  height:100%;
+  width:100%;
+}
+body{
+  height:100%;
+  width:100%;
+}
+#container{
+  height:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+} 
+#logo{
+  position: absolute;
+  margin-left: 165px;
+  margin-top: 7px;
+  z-index: 2000;
+}
+#logo img{
+  width:150px;
+  height:80px;
+}
+#homeDiv *{
+  height:480px;
+  margin-right:0px;
+}
+#homeDiv img{
+  margin-top:75px;
+  width: 310px;
+  height: 310px;
+}
+#homeLine{
+  margin-left:55px;
+}
+#enterButton{
+  padding:3px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: 130px;
+}
+#enterButton2{
+  margin-left:116px;
+  padding:3px;
+  border: none;
+}
+div.background-menu {
+  height:100%;
+  background: radial-gradient(at 50% 50%, rgba(16, 38, 82,0.7) 2%, rgba(255, 255, 255,-2.0) 50%), url(../assets/images/menubackground-320.png) no-repeat center center fixed; 
+ -webkit-background-size: 100% 100% !important;
+  -moz-background-size: 100% 100% !important;
+  -o-background-size: 100% 100% !important;
+  background-size: 100% 100% !important;
+}
