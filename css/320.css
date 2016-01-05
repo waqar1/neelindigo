@@ -52,3 +52,56 @@ div.background-menu {
   -o-background-size: 100% 100% !important;
   background-size: 100% 100% !important;
 }
+#Upper{
+  color:#fff;
+}
+#Left{
+  color:#fff;
+}
+#Right{
+  color:#fff;
+}
+#Below{
+  color:#fff;
+}
+#upperSpan{
+  position:absolute;
+  top:30%;
+  text-align:center; width:100%;
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+#leftSpan{
+  position:absolute;
+  top:40%;
+  text-align:center; width:100%;
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+#rightSpan{
+  position:absolute;
+  top:60%;
+  text-align:center; width:100%;
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+#belowSpan{
+  position:absolute;
+  top:70%;
+  text-align:center; width:100%;
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+.back{
+  margin-left:20px;
+  margin-top:30px;
+}
+.back img{
+  margin-top: 35px;
+  width: 35px;
+  height: 35px;
+}

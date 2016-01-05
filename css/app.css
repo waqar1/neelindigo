@@ -72,6 +72,18 @@ div.transbox span a:hover{
   display:inline-block;
   text-decoration: none;
 }
+#upperSpan{
+  position:absolute; top:130px; text-align:center; width:180px; left:45%;
+}
+#leftSpan{
+  position:absolute; left:170px; text-align:center; width:300px; top:45%;
+}
+#rightSpan{
+  position:absolute; right:330px; text-align:center; width:80px; top:45%;
+}
+#belowSpan{
+  position:absolute; bottom:100px; text-align:center; width:80px; left:48%;
+}
 #kitten {
   width: 900px;
   height:700px;
