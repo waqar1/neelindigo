@@ -270,6 +270,7 @@ display: inline-block;
   top:20%;
 }
 #fireFlames{
+  margin-left: 30px;
     display: inline-table;
     text-align: center;
     vertical-align: middle;
@@ -320,4 +321,8 @@ display: inline-block;
 }
 .dropdown-menu{
   left:25% !important;
+}
+#timerBack{
+  position:absolute;
+  top:20%;
 }
