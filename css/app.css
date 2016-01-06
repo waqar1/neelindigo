@@ -291,3 +291,60 @@ pre {
 .imagesAlignedTop img {
     vertical-align: top;
 }
+#firstImg{
+  width:120px; height:120px;
+}
+#secondImg{
+  width:120px; height:120px;
+}
+#thirdImg{
+  width:120px; height:120px;
+}
+#cottonDiv h2{
+  margin-left:28px;
+}
+#woolDiv h2{
+  margin-left:39px;
+}
+#silkDiv h2{
+  margin-left:47px;
+}
+#cottonDiv{
+  width:100px;float:left;
+}
+#woolDiv{
+  width:100px;float:left;margin-left:80px;
+}
+#silkDiv{
+  width:100px;float:left;margin-left:80px;
+}
+#fabricsHeading{
+  margin-left:190px;
+}
+#fabricsHeading h1{
+  font-size:26px;
+}
+#fabricsCenter{
+  left:30%; top:29%;
+}
+#subCenter{
+  left:35%; top:35%;
+}
+#subFirstDiv{
+  width:210px;float:left;
+}
+#subFirstDiv h2{
+  margin-left:20px;margin-top:30px;
+}
+#subSecondDiv{
+  width:220px;float:left;margin-left:10px;
+}
+#subSecondDiv h2{
+  margin-left:25px;margin-top:30px;
+}
+#thirdImg{
+  width:150px; height:150px;margin-left:20px;
+}
+#fourthImg{
+  width:150px; height:150px; margin-left:20px;
+}

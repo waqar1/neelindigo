@@ -12,9 +12,6 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
    background: url(../assets/images/menubackground-320.png) no-repeat center center; 
-/* -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;*/
   background-size: cover !important;
 } 
 #logo{
@@ -55,10 +52,6 @@ body{
   border: none;
 }
 div.background-menu {
-/*  background: url(../assets/images/menubackground-320.png) no-repeat; */
-/* -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;*/
   background-size: cover !important;
 }
 #Upper{
@@ -109,4 +102,66 @@ div.background-menu {
   margin-top: 35px;
   width: 35px;
   height: 35px;
+}
+#cottonDiv{
+  display:block;
+  text-align: center;
+}
+#woolDiv{
+  display:block;
+  text-align: center;
+}
+#silkDiv{
+  display:block;
+  text-align: center;
+}
+#fabricsHeading{
+  text-align: center;
+  margin-top: 100px;
+  display: block;
+}
+#firstImg{
+  width:120px; height:120px;
+}
+#secondImg{
+  width:120px; height:120px;
+}
+#thirdImg{
+  width:120px; height:120px;
+}
+.white-bordered-text{
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#fff;
+}
+#backFabrics{
+  position: absolute;
+  top: 7%;
+}
+#fabricsCenter{
+  height:44em;
+}
+#subCenter{
+  height:34em;
+}
+#subFirstDiv{
+  margin-top:90px;
+  display:block;
+  text-align: center;
+}
+#subFirstDiv h2{
+  margin-left:20px;margin-top:10px;
+}
+#subSecondDiv{
+  display:block;
+  text-align: center;
+}
+#subSecondDiv h2{
+  margin-left:25px;margin-top:10px;
+}
+#thirdImg{
+  width:120px; height:120px;
+}
+#fourthImg{
+  width:120px; height:120px;
 }
