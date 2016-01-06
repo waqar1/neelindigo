@@ -1,27 +1,27 @@
 <div class="background">
 	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;"></div>
-	<div style="width: 90%;margin-left: 270px;margin-top: 180px;" ng-if="imgUrl.indexOf('undefined') < 0">
-		<div style="float: left;width: 30%;margin-top:50px;">
-			<h1 class="white-bordered-text" style="font-size:24px;line-height:0.1;">DETAIL RESULT</h1><br/>
-			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">FABRIC &nbsp;&nbsp;&nbsp; {{fabric | uppercase}}</h3><br/>
-			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">MORDENT &nbsp;&nbsp;&nbsp; {{mordent | uppercase}}</h3><br/>
-			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">DYEING TIME &nbsp;&nbsp;&nbsp; {{time}}&nbsp; MINUTES</h3><br/>
-			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">DYEING MATERIAL &nbsp;&nbsp;&nbsp; {{material | uppercase}}</h3><br/>
-			<h3 class="white-bordered-text animated rubberBand" style="line-height:0.1;">MORDENT BATH {{position | uppercase}} DYEING</h3>
+	<div id="resultMain" ng-if="imgUrl.indexOf('undefined') < 0">
+		<div id="resultSub">
+			<h1 class="white-bordered-text">DETAIL RESULT</h1><br/>
+			<h3 class="white-bordered-text animated rubberBand">FABRIC &nbsp;&nbsp;&nbsp; {{fabric | uppercase}}</h3><br/>
+			<h3 class="white-bordered-text animated rubberBand">MORDENT &nbsp;&nbsp;&nbsp; {{mordent | uppercase}}</h3><br/>
+			<h3 class="white-bordered-text animated rubberBand">DYEING TIME &nbsp;&nbsp;&nbsp; {{time}}&nbsp; MINUTES</h3><br/>
+			<h3 class="white-bordered-text animated rubberBand">DYEING MATERIAL &nbsp;&nbsp;&nbsp; {{material | uppercase}}</h3><br/>
+			<h3 class="white-bordered-text animated rubberBand">MORDENT BATH {{position | uppercase}} DYEING</h3>
 		</div>
-		<div class="container" style="width:50%;" ng-if="imgUrl.indexOf('undefined') < 0">
-		  <img ng-src="{{imgUrl}}" style="width:350px; height:300px; border:2px solid white;" />
+		<div id="imgContainerResult" class="container" ng-if="imgUrl.indexOf('undefined') < 0">
+		  <img ng-src="{{imgUrl}}" />
 		</div>
 	</div>
 
 		
 	<a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;text-decoration:none"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
-	<div id="sCollection" style="width:90%;z-index: 999;position: relative;margin-top:170px;margin-left:100px;" ng-if="swatchesCollection.length > 0">
-		<h2 style="text-align:center;font-size: 32px;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color: #fff;">Swatches collection</h2>
+	<div id="sCollection" ng-if="swatchesCollection.length > 0">
+		<h2>Swatches collection</h2>
     <ul class="rig columns-4" style="list-style-type: none;">
        <li class="animated bounceInDown hoverEffect" ng-repeat="swatch in swatchesCollection">
            <a style="cursor:pointer;text-decoration:none;">
-            <img ng-src="{{swatch.imgUrl}}" style="width:260px; height:220px;"/>
+            <img id="collectionImg" ng-src="{{swatch.imgUrl}}" style=""/>
             <h4>Fabic: {{swatch.fabric}}</h4>
             <h4>Mordent: {{swatch.mordent}}</h4>
             <h4>Time: {{swatch.time}} Minutes</h4>
@@ -31,7 +31,7 @@
         </li>
     </ul>
 </div>
-<div style="height:100px;text-align:center;"><button class="btn btn-danger" ng-click="printDiv()">PRINT</button></div>
+<div style="display:block;height:100px;text-align:center;"><button class="btn btn-danger" ng-click="printDiv()">PRINT</button></div>
 <div style="height:20px;"></div>
 	<div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
 </div>

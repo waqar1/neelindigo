@@ -480,3 +480,27 @@ pre {
 #mordentThird h2{
   margin-left:70px;
 }
+#resultMain{
+  width: 90%;margin-left: 270px;margin-top: 180px;
+}
+#resultSub{
+  float: left;width: 30%;margin-top:50px;
+}
+#resultSub h1{
+  font-size:24px;line-height:0.1;
+}
+#imgContainerResult{
+  width:50%;
+}
+#imgContainerResult img{
+  width:350px; height:300px; border:2px solid white;
+}
+#sCollection{
+  width:90%;z-index: 999;position: relative;margin-top:170px;margin-left:100px;
+}
+#sCollection h2{
+  text-align:center;font-size: 32px;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color: #fff;
+}
+#collectionImg{
+  width:260px; height:220px;
+}
