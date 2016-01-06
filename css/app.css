@@ -450,3 +450,33 @@ pre {
 #timeSelector{
   top:22%;left:55%;
 }
+#mordentCenter{
+  left:30%; top:35%;
+}
+#mordentFirst{
+  width:160px;float:left;
+}
+#mordentFirst img{
+  width:150px; height:150px;
+}
+#mordentFirst h2{
+  margin-left:25px;
+}
+#mordentSecond{
+  width:180px;float:left;margin-left:5px;
+}
+#mordentSecond img{
+  width:150px; height:150px; margin-left:20px;
+}
+#mordentSecond h2{
+  margin-left:50px;
+}
+#mordentThird{
+  width:180px;float:left;margin-left:5px;
+}
+#mordentThird img{
+  width:150px; height:150px; margin-left:20px;
+}
+#mordentThird h2{
+  margin-left:70px;
+}

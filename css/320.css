@@ -326,3 +326,37 @@ display: inline-block;
   position:absolute;
   top:20%;
 }
+#mordentCenter{
+  margin-top: 80px;
+  height: 45em;
+}
+#mordentFirst{
+  display:block;
+  text-align: center;
+}
+#mordentFirst img{
+  width:120px; height:120px;
+}
+#mordentFirst h2{
+  
+}
+#mordentSecond{
+  display:block;
+  text-align: center;
+}
+#mordentSecond img{
+  width:120px; height:120px;
+}
+#mordentSecond h2{
+  
+}
+#mordentThird{
+  display:block;
+  text-align: center;
+}
+#mordentThird img{
+  width:120px; height:120px;
+}
+#mordentThird h2{
+  
+}
