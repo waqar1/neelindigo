@@ -426,3 +426,27 @@ pre {
 #listBar{
   width:80px; height:50%;position:absolute;top:160px;left:200px;
 }
+#fireFlames{
+  position:absolute; top:20%; left:30%; z-index:30;
+}
+#fireFlames2{
+  margin-left:150px; margin-top:68px;position:absolute;
+}
+#mailImg{
+
+}
+#containerImg{
+  position: absolute;top: 28%;left: 31%;z-index: 1000;
+}
+#materialImg{
+  position: absolute;top: 31%;left: 37%;z-index: 1001;
+}
+#prgTxt{
+  position: absolute;top: 85%;left: 12%;
+}
+#prgMain{
+  width:235px;position: absolute;top: 100%;left: 12%;height: 20px;
+}
+#timeSelector{
+  top:22%;left:55%;
+}

@@ -269,3 +269,55 @@ display: inline-block;
   position:absolute;
   top:20%;
 }
+#fireFlames{
+    display: inline-table;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 60px;
+}
+#fireFlames *{
+  vertical-align: middle;
+}
+#fireFlames2{
+  position: absolute;
+    left: 50%;
+    top: 18%;
+}
+#mailImg{
+    text-align: center;
+    height: 303px;
+    display: block;
+}
+#containerImg{
+ left: 35%;
+    top: 25%;
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    width: 100px;
+}
+#materialImg{
+   left: 39%;
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    width: 75px;
+    top: 25%;
+}
+#prgTxt{
+ display:block;
+  text-align: center;
+}
+#prgMain{
+  display:inline-block;
+  width:50%;
+}
+#timeSelector{
+  height:16em;
+  display:block;
+  text-align: center;
+  margin-top:0px;
+}
+.dropdown-menu{
+  left:25% !important;
+}
