@@ -159,9 +159,110 @@ div.background-menu {
 #subSecondDiv h2{
   margin-left:25px;margin-top:10px;
 }
-#thirdImg{
-  width:120px; height:120px;
-}
 #fourthImg{
   width:120px; height:120px;
+}
+#fifthImg{
+  width:120px; height:120px;
+}
+#listCenter{
+
+}
+#firstList{
+  margin-top:80px;
+    height:100%;
+    vertical-align: middle;
+}
+#firstList a{
+  display:inline-flex;
+   cursor:pointer;
+}
+#firstList h2{
+  display: inline-block;
+    margin-left: 20px;
+}
+#secondList{
+    height:100%;
+    vertical-align: middle;
+}
+#secondList a{
+   display:inline-flex;
+cursor:pointer;
+}
+#secondList h2{
+  display: inline-block;
+    margin-left: 20px;
+}
+#thirdList{
+    height:100%;
+    vertical-align: middle;
+}
+#thirdList a{
+   display:inline-flex;
+ cursor:pointer;
+}
+#thirdList h2{
+display: inline-block;
+    margin-left: 20px;
+}
+#fourthList{
+    height:100%;
+    vertical-align: middle;
+}
+#fourthList a{
+   display:inline-flex;
+ cursor:pointer;
+}
+#fourthList h2{
+display: inline-block;
+    margin-left: 20px;
+}
+#fifthList{
+    height:100%;
+    vertical-align: middle;
+}
+#fifthList a{
+   display:inline-flex;
+ cursor:pointer;
+}
+#fifthList h2{
+display: inline-block;
+    margin-left: 20px;
+}
+#sixthList{
+    height:100%;
+    vertical-align: middle;
+}
+#sixthList a{
+   display:inline-flex;
+  cursor:pointer;
+}
+#sixthList h2{
+display: inline-block;
+    margin-left: 20px;
+}
+
+#listImg1{
+  width:50px; height:50px; 
+}
+#listImg2{
+  width:50px; height:50px; 
+}
+#listImg3{
+  width:50px; height:50px; 
+}
+#listImg4{
+  width:50px; height:50px; 
+}
+#listImg5{
+  width:50px; height:50px; 
+}
+#listImg6{
+  width:50px; height:50px; 
+}
+#listBar{
+  margin-top:0px;
+  margin-left:0px;
+  display: inline-block;
+  float: left;
 }
