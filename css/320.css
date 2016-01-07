@@ -6,53 +6,66 @@ body{
   height:100%;
   width:100%;
   line-height: 2.428571;
+  background: url(../assets/images/menubackground-320.png) no-repeat; 
+  background-size: cover !important;
 }
 #container{
-  height:100%;
   overflow-x: hidden;
   overflow-y: auto;
-   background: url(../assets/images/menubackground-320.png) no-repeat center center; 
-  background-size: cover !important;
 } 
 #logo{
   position: absolute;
-  margin-left: 165px;
-  margin-top: 7px;
-  z-index: 2000;
+  top:1em;
+  right:1em;
 }
 #logo img{
   width:150px;
   height:80px;
 }
+#homeDiv{
+  height:100% !important;
+}
 #homeDiv *{
-  height:480px;
+  display:block;
   margin-right:0px;
 }
 #homeDiv img{
-  margin-top:90px;
+  margin-top:100px;
   width: 100%;
-  height: 310px;
+  height:100%;
 }
 #homeLine{
-  
+  text-align: center;
 }
 #homeLine img{
-  width:100%;
-  height:5px;
 }
 #enterButton{
-  padding:3px;
-  position: relative;
-  margin-top: 215px;
-  margin-left: 39%;
+
+}
+#enterBDiv{
+  text-align: center;
 }
 #enterButton2{
-  margin-left:35%;
-  padding:3px;
-  border: none;
 }
-div.background-menu {
-  background-size: cover !important;
+#enterB2Div{
+  text-align: center;
+}
+.background-menu { 
+}
+#homeModal{
+  margin-top:5%;
+}
+#whiteTop{
+  height: 35px;
+    position: static;
+    background-color: white;
+}
+#whiteBottom{
+   height: 37px;
+   width:100%;
+    position: absolute;
+    bottom:0%;
+    background-color: white;
 }
 #Upper{
   color:#fff;
@@ -95,10 +108,12 @@ div.background-menu {
   color:#fff;
 }
 .back{
+  display:none;
   margin-left:20px;
   margin-top:30px;
 }
 .back img{
+  display:none;
   margin-top: 35px;
   width: 35px;
   height: 35px;
@@ -117,17 +132,17 @@ div.background-menu {
 }
 #fabricsHeading{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
   display: block;
 }
 #firstImg{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 #secondImg{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 #thirdImg{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 .white-bordered-text{
   font-size:18px;
@@ -135,17 +150,15 @@ div.background-menu {
   color:#fff;
 }
 #backFabrics{
-  position: absolute;
-  top: 7%;
+  display:none;
 }
 #fabricsCenter{
-  height:44em;
 }
 #subCenter{
-  height:34em;
+  margin-top: 40px;
 }
 #subFirstDiv{
-  margin-top:90px;
+  margin-top:20px;
   display:block;
   text-align: center;
 }
@@ -168,7 +181,7 @@ div.background-menu {
 #listCenter{
 }
 #firstList{
-  margin-top:80px;
+  margin-top: 30px;
     height:100%;
     vertical-align: middle;
 }
@@ -229,7 +242,6 @@ display: inline-block;
     margin-left: 20px;
 }
 #sixthList{
-    height: 11em;
     vertical-align: middle;
 }
 #sixthList a{
@@ -260,14 +272,13 @@ display: inline-block;
   width:50px; height:50px; 
 }
 #listBar{
-  margin-top:0px;
+  margin-top:30px;
   margin-left:0px;
   display: inline-block;
   float: left;
 }
 #listBack{
-  position:absolute;
-  top:20%;
+  display:none;
 }
 #fireFlames{
   margin-left: 30px;

@@ -504,3 +504,12 @@ pre {
 #collectionImg{
   width:260px; height:220px;
 }
+#homeModal{
+  width:900px;margin-top:5%;
+}
+#whiteTop{
+  width:100%; z-index:1000; height:78px; background-color:white;position:absolute;top:0%;
+}
+#whiteBottom{
+  width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;
+}

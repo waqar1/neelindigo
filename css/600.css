@@ -21,8 +21,9 @@ body{
   z-index: 2000;
 }
 #logo img{
-  width:150px;
-  height:80px;
+  margin-left: 18%;
+    position: fixed;
+    width: 50%;
 }
 #homeDiv *{
   height:480px;
