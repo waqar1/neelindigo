@@ -513,3 +513,24 @@ pre {
 #whiteBottom{
   width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;
 }
+#historyCenter{
+  width:100%;z-index: 999;position: relative;margin-top:160px;  
+}
+#craftsCenter{
+  width:90%;z-index: 999;position: relative;margin-top:100px;
+}
+#craftsDiv{
+  width:100%;z-index: 999;position: relative;margin-top:170px;
+}
+#dW{
+  width:50%;
+}
+#dWI{
+  width:700px; height:auto;
+}
+#dW2{
+  width:50%; height:10%;
+}
+#dWI2{
+  max-width:800px;
+}

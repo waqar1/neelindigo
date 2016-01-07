@@ -52,6 +52,12 @@ body{
 }
 .background-menu { 
 }
+div.background{
+ /* background: linear-gradient(122.5deg, rgba(16, 38, 82, 0.498039), rgba(255, 255, 255, 0)), url("../assets/images/background.jpg") 50% 50% no-repeat fixed;*/
+}
+div.bgResult{
+  background: linear-gradient(122.5deg, rgba(16, 38, 82, 0.498039), rgba(255, 255, 255, 0)), url("../assets/images/background.jpg") 50% 50% no-repeat fixed;  
+}
 #homeModal{
   margin-top:5%;
 }
@@ -61,9 +67,23 @@ body{
     background-color: white;
 }
 #whiteBottom{
-   height: 37px;
+   height: 35px;
    width:100%;
     position: absolute;
+    bottom:0%;
+    background-color: white;
+}
+.wbResult{
+  height: 35px;
+   width:100%;
+    position: static !important;
+    bottom:0%;
+    background-color: white;
+}
+.timerB{
+  height: 37px;
+   width:100%;
+    position: static !important;
     bottom:0%;
     background-color: white;
 }
@@ -145,7 +165,7 @@ body{
   width:80px; height:80px;
 }
 .white-bordered-text{
-  font-size:18px;
+  font-size:14px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color:#fff;
 }
@@ -281,28 +301,22 @@ display: inline-block;
   display:none;
 }
 #fireFlames{
-  margin-left: 30px;
-    display: inline-table;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 60px;
+  margin-top: 60px;
+  text-align: center;
+  display: block;
 }
 #fireFlames *{
   vertical-align: middle;
 }
 #fireFlames2{
-  position: absolute;
-    left: 50%;
-    top: 18%;
+  display: none;
 }
 #mailImg{
-    text-align: center;
-    height: 303px;
-    display: block;
+    height: 200px;
 }
 #containerImg{
  left: 35%;
-    top: 25%;
+    top: 17%;
     position: absolute;
     display: inline-block;
     height: 80px;
@@ -314,9 +328,10 @@ display: inline-block;
     display: inline-block;
     height: 80px;
     width: 75px;
-    top: 25%;
+    top: 17%;
 }
 #prgTxt{
+  font-size: 12px;
  display:block;
   text-align: center;
 }
@@ -325,51 +340,57 @@ display: inline-block;
   width:50%;
 }
 #timeSelector{
-  height:20em;
+  margin-bottom: 1em;
   display:block;
   text-align: center;
   margin-top:0px;
 }
+#timeSelector h2{
+  font-size: 12px;
+}
 .dropdown-menu{
   left:25% !important;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  float:none;
 }
 #timerBack{
   position:absolute;
   top:20%;
 }
 #mordentCenter{
-  margin-top: 80px;
-  height: 45em;
+  margin-top: 20px;
 }
 #mordentFirst{
   display:block;
   text-align: center;
 }
 #mordentFirst img{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 #mordentFirst h2{
-  
+  font-size: 16px;
 }
 #mordentSecond{
   display:block;
   text-align: center;
 }
 #mordentSecond img{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 #mordentSecond h2{
-  
+  font-size: 16px;
 }
 #mordentThird{
   display:block;
   text-align: center;
 }
 #mordentThird img{
-  width:120px; height:120px;
+  width:80px; height:80px;
 }
 #mordentThird h2{
-  
+  font-size: 16px;
 }
 #resultMain{
   
@@ -398,4 +419,36 @@ display: inline-block;
 #sCollection h4{
   color:#fff;
   text-align:center;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color: #fff;
+}
+#historyCenter{
+  width:100%;z-index: 999;display: block;text-align: center;height:380px; overflow:scroll;margin-top:50px;
+}
+#historyImages{
+  width:150px;
+  height:150px;
+  margin-bottom: 30px;
+}
+#craftsCenter{
+   width:100%;z-index: 999;display: block;text-align: center;height:380px; overflow:scroll;margin-top:50px;
+}
+#craftsDiv{
+  width:100%;z-index: 999;
+}
+#craftsImages{
+  width:150px;
+  height:150px;
+  margin-bottom: 30px;
+}
+#dW{
+  width:100%;
+}
+#dWI{
+  width:100%; height:100%;
+}
+#dW2{
+  width:100%;height:10%;
+}
+#dWI2{
+  max-height:200px;
+  max-width:200px;
 }

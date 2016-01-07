@@ -1,10 +1,10 @@
 <div class="background">
-    <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;"></div>
-	<div style="width:100%;z-index: 999;position: relative;margin-top:160px;">
+    <div id="whiteTop"></div>
+	<div id="historyCenter">
         <ul class="rig columns-3">
             <a data-toggle="modal" data-target="#myModal" style="cursor:pointer;text-decoration:none;" ng-repeat="img in imagesCollection.urls">
             	<li class="animated bounceInDown hoverEffect">
-            		<img ng-src="{{baseUrl}}/{{img.url}}" ng-click="selectImage($index)" />
+            		<img id="historyImages" ng-src="{{baseUrl}}/{{img.url}}" ng-click="selectImage($index)" />
             	</li>
             </a>
         </ul>
@@ -13,10 +13,10 @@
     <div style="position:relative; z-index:5000;">
         <a class="back animated bounceIn" ng-class="icons" style="cursor:pointer;"><img src="assets/images/back-button.png" onClick="javascript:window.history.go(-1); return false;" /></a>
     </div>
-    <div style="width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;"></div>
+    <div id="whiteBottom"></div>
 </div>
 <div id="myModal" class="modal fade" role="dialog" style="z-index:5000;">
-  <div class="modal-dialog" style="width:50%; height:10%;">
-    <img ng-src="{{baseUrl}}/{{selectedImg}}" style="max-width:800px;" height="500" />
+  <div id="dW2" class="modal-dialog">
+    <img id="dWI2" ng-src="{{baseUrl}}/{{selectedImg}}" height="500" />
   </div>
 </div>
