@@ -508,10 +508,10 @@ pre {
   width:900px;margin-top:5%;
 }
 #whiteTop{
-  width:100%; z-index:1000; height:78px; background-color:white;position:absolute;top:0%;
+  width:100%; z-index:1000; height:78px; background-color:white;position:fixed;top:0%;
 }
 #whiteBottom{
-  width:100%; z-index:1000; height:78px; background-color:white;position:absolute;bottom:0%;
+  width:100%; z-index:1000; height:78px; background-color:white;position:fixed;bottom:0%;
 }
 #historyCenter{
   width:100%;z-index: 999;position: relative;margin-top:160px;  
