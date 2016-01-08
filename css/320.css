@@ -452,3 +452,13 @@ display: inline-block;
   max-height:200px;
   max-width:200px;
 }
+@media (max-width: 320px) and (orientation: portrait) {
+  #nofocusvideo{
+    width:100% !important;max-width:320px !important; 
+  }
+}
+@media (max-width: 480px) and (orientation: landscape)  {
+  #nofocusvideo{
+    width:100% !important;max-width:480px !important; 
+  }
+}
